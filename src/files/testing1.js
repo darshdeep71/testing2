@@ -23,7 +23,7 @@ function Testing1() {
   // check and reset timer
 
   let [n, setN] = useState(0);
-  let clear = setInterval(check, 1000)
+  let clear = setInterval(check, 10000000)
 
   function check() {
     if (document.visibilityState === "visible" && n === 40) {
@@ -62,7 +62,7 @@ function Testing1() {
       // c.preventDefault()
       // setF(document.getElementById('t-b').value);
 
-      let result = await fetch( 'https://backened-uvpn.onrender.com/register', {
+      let result = await fetch( 'https://testing2-backened.onrender.com/register', {
 
       // let result = await fetch('http://localhost:1000/register', {
 
@@ -85,11 +85,14 @@ function Testing1() {
 
   async function getting() {
 
-    let result = await fetch('http://localhost:1000/get');
+    let result = await fetch('https://testing2-backened.onrender.com/get');
+    // let result = await fetch('http://localhost:1000/get');
     result = await result.json();
     setGd(result);
-    // console.log(gd)
-    document.getElementById("div1").innerHTML = gd.length;
+    console.log(gd)
+    // console.log(gd.length)
+    // document.getElementById("div1").innerHTML = gd.length;
+    document.getElementById("div1").innerHTML = gd;
 
   }
 
@@ -103,8 +106,9 @@ function Testing1() {
   return (
     <div>
       {n}
-      <br></br>
+      <br></br> <br></br>
       {gd}
+      <button onClick={getting}>show</button>
 
 
 
@@ -202,8 +206,9 @@ function Testing1() {
 
         <input type='text' value="4444444" id='t-b' onChange={st}></input> <br></br>  <br></br>
         {/* <button onClick={f22222}>Submit</button> */}
-        <p>isto agla button hai usto baad div hai ---</p>
-        <button onClick={getting}>show</button>
+        {/* <p>isto agla button hai usto baad div hai ---</p> */}
+        
+        {/* <div>show button dabake data niche aayega</div> */}
         <div id='div1'></div>
       </div>
 
