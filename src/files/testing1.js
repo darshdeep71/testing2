@@ -23,7 +23,7 @@ function Testing1() {
   // check and reset timer
 
   let [n, setN] = useState(0);
-  let clear = setInterval(check, 10000000)
+  let clear = setInterval(check, 1000)
 
   function check() {
     if (document.visibilityState === "visible" && n === 40) {
