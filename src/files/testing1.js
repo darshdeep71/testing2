@@ -26,7 +26,7 @@ function Testing1() {
   let clear = setInterval(check, 1000)
 
   function check() {
-    if (document.visibilityState === "visible" && n === 40) {
+    if (document.visibilityState === "visible" && n === 70) {
       // console.log(n)
       setF2(n);
       clearInterval(clear);
@@ -58,7 +58,7 @@ function Testing1() {
     }
   }, [f22])
   async function f22222() {
-    if (n === 40) {
+    if (n === 70) {
       // c.preventDefault()
       // setF(document.getElementById('t-b').value);
 
@@ -108,7 +108,9 @@ function Testing1() {
       {n}
       <br></br> <br></br>
       {gd}
-      <button onClick={getting}>show</button>
+      <button onClick={getting}>s</button>
+      <p style={{textAlign: "center"}}>Watch videos ads free and enjoy. New more videos coming soon.</p>
+      <br></br>
 
 
 
@@ -118,8 +120,17 @@ function Testing1() {
           <div id='first'>
 
 
+            {/* video */}
+
+            {/* <div style={{backgroundColor: "", padding: "5px 5px"}}>
+              <iframe allow='fullscreen;autoplay' allowFullScreen height="" width="100%" src='https://streamable.com/e/7s4jv7?autoplay=1' style={{backgroundColor: "", height: "400px", border: "none"}}></iframe>
+            </div> */}
+
+            {/* video */}
+
+
             <div style={{ backgroundColor: "yello", display: "flex", justifyContent: "center", alignItems: "center", padding: "5px 5px" }}>
-              <iframe style={{ width: "700px", height: "400px" }} id='js_video_iframe' src="https://jumpshare.com/embed/xPakEMZ3oqWYMNDK5Kkv" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+              <iframe style={{ width: "700px", height: "400px" }} id='js_video_iframe' src="https://jumpshare.com/embed/yW3w7JiFENKlC7by2OsH" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             </div>
 
 
@@ -141,13 +152,22 @@ function Testing1() {
 
 
 
-          </div>
+          </div> <br></br>
           <div id='second'>
+
+
+            {/* video */}
+
+            {/* <div style={{backgroundColor: "", padding: "5px 5px"}}>
+              <iframe allow='fullscreen;autoplay' allowFullScreen height="" width="100%" src='https://streamable.com/e/4h1ssk?autoplay=1' style={{backgroundColor: "", height: "400px", border: "none"}}></iframe>
+            </div> */}
+
+            {/* video */}
 
 
 
             <div style={{ backgroundColor: "yello", display: "flex", justifyContent: "center", alignItems: "center", padding: "5px 5px" }}>
-              <iframe style={{ width: "700px", height: "400px" }} id='js_video_iframe' src="https://jumpshare.com/embed/xPakEMZ3oqWYMNDK5Kkv" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+              <iframe style={{ width: "700px", height: "400px" }} id='js_video_iframe' src="https://jumpshare.com/embed/IekPeXGuv3mjYXCwYqw8" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             </div>
 
 
@@ -177,9 +197,9 @@ function Testing1() {
 
 
 
-            <div style={{ backgroundColor: "yello", display: "flex", justifyContent: "center", alignItems: "center", padding: "5px 5px" }}>
+            {/* <div style={{ backgroundColor: "yello", display: "flex", justifyContent: "center", alignItems: "center", padding: "5px 5px" }}>
               <iframe style={{ width: "700px", height: "400px" }} id='js_video_iframe' src="https://jumpshare.com/embed/xPakEMZ3oqWYMNDK5Kkv" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-            </div>
+            </div> */}
 
 
 
@@ -203,6 +223,10 @@ function Testing1() {
 
           </div>
         </div>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
 
         <input type='text' value="4444444" id='t-b' onChange={st}></input> <br></br>  <br></br>
         {/* <button onClick={f22222}>Submit</button> */}
