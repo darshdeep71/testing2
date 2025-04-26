@@ -105,7 +105,7 @@ function Testing1() {
 
   return (
     <div>
-      {n}
+      {/* {n} */}
       <br></br> <br></br>
       {gd}
       <button onClick={getting}>s</button>
