@@ -23,7 +23,7 @@ function Testing1() {
   // check and reset timer
 
   let [n, setN] = useState(0);
-  let clear = setInterval(check, 1000)
+  let clear = setInterval(check, 1000000)
 
   function check() {
     if (document.visibilityState === "visible" && n === 70) {
@@ -62,9 +62,9 @@ function Testing1() {
       // c.preventDefault()
       // setF(document.getElementById('t-b').value);
 
-      let result = await fetch( 'https://testing2-backened.onrender.com/register', {
+      // let result = await fetch( 'https://testing2-backened.onrender.com/register', {
 
-      // let result = await fetch('http://localhost:1000/register', {
+      let result = await fetch('http://localhost:1000/register', {
 
         method: 'post',
         body: JSON.stringify({ f: document.getElementById('t-b').value }),
@@ -85,8 +85,8 @@ function Testing1() {
 
   async function getting() {
 
-    let result = await fetch('https://testing2-backened.onrender.com/get');
-    // let result = await fetch('http://localhost:1000/get');
+    // let result = await fetch('https://testing2-backened.onrender.com/get');
+    let result = await fetch('http://localhost:1000/get');
     result = await result.json();
     setGd(result);
     console.log(gd)
@@ -109,7 +109,7 @@ function Testing1() {
       <br></br> <br></br>
       {gd}
       <button onClick={getting}>s</button>
-      <p style={{textAlign: "center"}}>Watch videos ads free and enjoy. New more videos coming soon.</p>
+      {/* <p style={{textAlign: "center"}}>Watch videos ads free and enjoy. New more videos coming soon.</p> */}
       <br></br>
 
 
@@ -129,9 +129,9 @@ function Testing1() {
             {/* video */}
 
 
-            <div style={{ backgroundColor: "yello", display: "flex", justifyContent: "center", alignItems: "center", padding: "5px 5px" }}>
+            {/* <div style={{ backgroundColor: "yello", display: "flex", justifyContent: "center", alignItems: "center", padding: "5px 5px" }}>
               <iframe style={{ width: "700px", height: "400px" }} id='js_video_iframe' src="https://jumpshare.com/embed/yW3w7JiFENKlC7by2OsH" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-            </div>
+            </div> */}
 
 
 
@@ -166,9 +166,9 @@ function Testing1() {
 
 
 
-            <div style={{ backgroundColor: "yello", display: "flex", justifyContent: "center", alignItems: "center", padding: "5px 5px" }}>
+            {/* <div style={{ backgroundColor: "yello", display: "flex", justifyContent: "center", alignItems: "center", padding: "5px 5px" }}>
               <iframe style={{ width: "700px", height: "400px" }} id='js_video_iframe' src="https://jumpshare.com/embed/IekPeXGuv3mjYXCwYqw8" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-            </div>
+            </div> */}
 
 
 
